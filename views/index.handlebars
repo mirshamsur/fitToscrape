@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="header">
+    <div>
+      <h1 class="display-1|2|3|4">EDM Scraper</h1>
+      <ul class="nav nav-inline">
+        <li class="nav-item" id="scrape" role="scrapeData">
+          <a class="nav-link active" href="#">Scrape</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+    {{#each articles}}
+    <div class="card">
+      <img class="card-img-top img-fluid" src="holder.js/100%x180/" alt="">
+      <div class="card-block text-xs-left|center|right">
+        <h4 class="card-title">{{this.title}}</h4>
+        <p class="card-text">{{this.text}}</p>
+      </div>
+    </div>
+    {{/each}}
+</div>
