@@ -5,7 +5,7 @@ $.getJSON ("/articles", function(data){
 	//For each one 
 	for (var i = 0; i < data.length; i ++){
 
-		Display the apropos information on the page
+		//Display the apropos information on the page
 
 		$ ("#articles").append ("<p data-id'" + data [i]._id + "'>" + data [i].title + "<br />" + data[i].link + "</p>");
 	}
@@ -72,7 +72,7 @@ $("#bodyinput").val (data.note.body)
 });
 
 
-Click the savenote button
+//Click the savenote button
 
 $(document).on ("click", "#savenote", function(){
 
@@ -110,7 +110,7 @@ $.ajax({
 
 });
 
-Remove the values entered in the input and textarea for note entry
+//Remove the values entered in the input and textarea for note entry
 
 $("#titleinput").val("");
 $("# bodyinput").val("");
